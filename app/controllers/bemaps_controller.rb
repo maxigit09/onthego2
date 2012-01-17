@@ -1,8 +1,8 @@
 class BemapsController < ApplicationController
   include BemapsHelper
   include CsvHelper
-  # GET /bemaps
-  # GET /bemaps.json
+  #  GET /bemaps
+  #  GET /bemaps.json
   def index
     @bemaps = Bemap.all
 
