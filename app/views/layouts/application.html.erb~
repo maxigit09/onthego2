@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Onthego2</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= stylesheet_link_tag "gmaps4rails" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+    <div class="container">
+      <%= yield %>
+
+      <%= yield :scripts %>
+
+      <section class="round">
+        <% flash.each do |key, value| %>
+	  <%= content_tag(:div, value, :class => "flash #{key}") %>
+        <% end %>
+        <%= yield %>
+      </section>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  atch_file_name: MyString
+  atch_content_type: MyString
+  atch_file_size: 1
+
+two:
+  atch_file_name: MyString
+  atch_content_type: MyString
+  atch_file_size: 1

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  bmap_file_name: MyString
+  bmap_content_type: MyString
+  bmap_file_size: 1
+
+two:
+  bmap_file_name: MyString
+  bmap_content_type: MyString
+  bmap_file_size: 1

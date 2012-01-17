@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>File Name:</b>
+  <%= @bemap.atch_file_name %>
+</p>
+
+<p>
+  <b>Content Type:</b>
+  <%= @bemap.atch_content_type %>
+</p>
+
+<p>
+  <b>File Size:</b>
+  <%= @bemap.atch_file_size %>
+</p>
+
+
+<%= link_to 'Edit', edit_bemap_path(@bemap) %> |
+<%= link_to 'Back', bemaps_path %>
+
+<%= gmaps({
+       "polylines"    => { "data" => @bemap_polylines , "options" => { :strokeColor => "#00AAFF", :strokeWeight => 10, :strokeOpacity => 1 } }
+     })
+ %>
+

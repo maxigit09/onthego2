@@ -1,0 +1,37 @@
+<%= form_for @bemap, :html => { :multipart => true } do |f| %>
+
+  <% if @bemap.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bemap.errors.count, "error") %> prohibited this bemap from being saved:</h2>
+
+      <ul>
+      <% @bemap.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  
+  <% if @show_controls %>
+    <div class="field">
+      <%= f.label :File_Name %><br />
+      <%= f.text_field :atch_file_name %>
+    </div>
+    <div class="field">
+      <%= f.label :Content_Type %><br />
+      <%= f.text_field :atch_content_type %>
+    </div>
+    <div class="field">
+      <%= f.label :File_Size %><br />
+      <%= f.number_field :atch_file_size %>
+    </div>
+  <% end %>
+
+
+  <div class="actions">
+    <%= f.file_field :atch%>
+    <%= f.submit("Upload file") %>
+  </div>
+
+<% end %>
