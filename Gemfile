@@ -9,7 +9,9 @@ group :development, :test do
       gem 'sqlite3'
 end
 
-gem 'pg'
+# gem 'pg'
+
+gem 'mysql2'
 
 gem 'gmaps4rails', '~> 1.4.2'
 
